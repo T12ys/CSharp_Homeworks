@@ -88,3 +88,40 @@
 // string month_name = GetMonthName(month);
 // Console.WriteLine($"The day of the week for {day} {month_name} {year} is {day_of_week}");
 // //КАК УЗНАТЬ ДЕНЬ НЕДЕЛИ ПО ДАТЕ https://lifehacker.ru/kakoj-den-nedeli/
+//
+//
+//================================================================================
+//ВТОРАЯ ВЕРСИЯ КОДА С ИСПОЛЬЗОВАНИЕМ DateTime.
+//================================================================================
+//
+//
+// Console.WriteLine("Enter your date in format dd.MM.yyyy");
+// string dateString = Console.ReadLine();
+//
+// DateTime parsedDate;
+//
+// bool success = DateTime.TryParse(dateString, out parsedDate);
+//
+// if (!success)
+// {
+//     Console.WriteLine("Invalid date format");
+//     Environment.Exit(0);
+// }
+//
+// Console.WriteLine($"Your date: {dateString}");
+// DayOfWeek dayOfWeek = parsedDate.DayOfWeek;  
+// Console.Write($"{dayOfWeek} "); 
+//
+// int month = parsedDate.Month;
+//         
+// if (month >= 3 && month <= 5)
+//     Console.WriteLine("Spring");
+// else if (month >= 6 && month <= 8)
+//     Console.WriteLine("Summer");
+// else if (month >= 9 && month <= 11)
+//     Console.WriteLine("Autumn");
+// else
+//     Console.WriteLine("Winter");
+//
+//
+//
